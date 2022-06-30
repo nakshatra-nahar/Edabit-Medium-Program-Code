@@ -1,0 +1,28 @@
+// You work in a toy car workshop, and your job is to build toy cars from a collection of parts. Each toy car needs 4 wheels, 1 car body, and 2 
+// figures of people to be placed inside. Given the total number of wheels, car bodies and figures available, how many complete toy cars can you make?
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int car[3] = {2, 48, 76};
+    
+    int totalWheels = car[0]/4;
+    cout<<"Total Wheels :- "<<totalWheels<<endl;
+    
+    int totalCarBodies = car[1];
+    cout<<"Total Car Bodies:- "<<totalWheels<<endl;
+    
+    int totalFigure = car[2]/2;
+    cout<<"Total Figure :- "<<totalFigure<<endl;
+    if(totalWheels<totalCarBodies && totalWheels<totalFigure){
+        cout<<"Total Cars Can Be Made :- "<<totalWheels;
+    }
+    else if(totalCarBodies<totalWheels && totalCarBodies<totalFigure){
+        cout<<"Total Cars Can Be Made :- "<<totalCarBodies;
+    }
+    else{
+        cout<<"Total Cars Can Be Made :- "<<totalFigure;
+    }
+    return 0;
+}
