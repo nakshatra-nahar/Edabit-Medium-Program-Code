@@ -1,0 +1,13 @@
+<?php
+    $count = 0;
+    $arr = array("SOLO","hello","Tea","wHat");
+    for ($i=0; $i < count($arr); $i++) { 
+        for ($j=0; $j < strlen($arr[$i]); $j++) { 
+            // echo($arr[$i][$j])."<br>";
+            if(ord($arr[$i][$j])>=65 && ord($arr[$i][$j])<=95){
+                $count++;
+            }
+        }
+    }
+    echo "Total Uppercase Letter Are :- ".$count;
+?>
